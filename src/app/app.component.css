@@ -1,0 +1,16 @@
+.container{
+    text-align: center;
+    padding-top: 80px;
+}
+#derrota{
+    color: rgb(148, 3, 3);
+}
+#vitoria{
+    color: rgb(0, 155, 0);
+}
+.reiniciar{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: -30px;
+
+  }

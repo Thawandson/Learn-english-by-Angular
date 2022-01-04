@@ -1,0 +1,13 @@
+.navbar{
+    background-color: #1CB0F6;
+    padding-left: 25px;  
+}
+#navTopo{
+    color: white;
+    padding: 11px;
+}
+#flag{
+  display: flex;
+  margin-left:180px ; 
+  margin-top: -30px; 
+}

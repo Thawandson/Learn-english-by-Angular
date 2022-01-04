@@ -1,0 +1,32 @@
+<app-topo></app-topo>
+
+<div *ngIf="jogoEmAndamento; else fimDeJogo">
+<app-painel (encerrarJogo)="encerrarJogo($event)"></app-painel>
+</div>
+
+<ng-template #fimDeJogo>
+    <div *ngIf= "tipoDeEncerramento === 'derrota'; else fimDeJogoVitoria" class="container">
+        <div class="row">
+            <div class="col">
+                <h3 id="derrota">Fim de jogo, infelizmente você perdeu.</h3>
+                <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/100/000000/external-sad-emotion-tulpahn-outline-color-tulpahn-1.png"/>
+            </div>
+         </div>
+     </div>  
+     <div class="reiniciar">
+         <button class="btn btn-primary"(click)="reiniciarJogo()">Jogar novamente</button>
+     </div>
+</ng-template>
+
+<ng-template #fimDeJogoVitoria>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 id="vitoria">Fim de jogo,você conseguiu traduzir todas as frases.</h3>
+                <img src="https://img.icons8.com/external-tulpahn-outline-color-tulpahn/100/000000/external-kind-emotion-tulpahn-outline-color-tulpahn.png"/>
+            </div>
+         </div>
+     </div>
+</ng-template >
+
+<app-rodape></app-rodape>
